@@ -184,7 +184,7 @@ function drawUI() {
   textSize(16);
   textStyle(BOLD);
   textAlign(LEFT, TOP);
-  text("WASD: Move | R: Record (lasts 10 seconds, press R again to interrupt at any time) \n| Step on both buttons simultaneously | Open portal", 10, 10);
+  text("WASD: Move | R: Record (lasts 10 seconds, press R again to interrupt at any time) \nStep on both buttons simultaneously | Open portal", 10, 10);
   
   textAlign(LEFT, TOP);
   if (levelState === 'RECORDING') {
