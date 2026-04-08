@@ -213,7 +213,7 @@ function drawDeadScreen() {
   
   fill(255);
   textSize(20);
-  text("掉进陷坑了! 按 'C' 重试", width / 2, height / 2 + 40);
+  text("Fell into a pit! Press 'C' to retry", width / 2, height / 2 + 40);
 }
 
 //胜利界面
