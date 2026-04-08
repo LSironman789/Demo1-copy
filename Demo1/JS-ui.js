@@ -190,7 +190,7 @@ function drawUI() {
   if (levelState === 'RECORDING') {
     let rem = ceil((recordDuration - (millis() - recordStartTime)) / 1000);
     fill(255, 50, 50);
-    text("Recording" + rem + "s", 10, 40);
+    text("Recording" + rem + "s", 10, 50);
   } else if (levelState === 'REPLAYING') {
     fill(100, 255, 100);
     text("Replaying (Controlling main body)", 10, 40);
