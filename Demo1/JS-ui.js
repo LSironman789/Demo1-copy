@@ -184,16 +184,16 @@ function drawUI() {
   textSize(16);
   textStyle(BOLD);
   textAlign(LEFT, TOP);
-  text("WASD: 移动 | R: 录制（持续10秒，再按R可随时中断） | 同时踩住两个按钮 | 开启传送门", 10, 10);
+  text("WASD: Move | R: Record (lasts 10 seconds, press R again to interrupt at any time) | Step on both buttons simultaneously | Open portal", 10, 10);
   
   textAlign(LEFT, TOP);
   if (levelState === 'RECORDING') {
     let rem = ceil((recordDuration - (millis() - recordStartTime)) / 1000);
     fill(255, 50, 50);
-    text("录制中 " + rem + "s", 10, 40);
+    text("Recording" + rem + "s", 10, 40);
   } else if (levelState === 'REPLAYING') {
     fill(100, 255, 100);
-    text("回放中 (控制本体)", 10, 40);
+    text("Replaying (Controlling main body)", 10, 40);
   }
   
   textStyle(NORMAL);
